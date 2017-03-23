@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "764417511298",
+    "firebase_url": "https://socio-b203c.firebaseio.com",
+    "project_id": "socio-b203c",
+    "storage_bucket": "socio-b203c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764417511298:android:02dc447e9890fe55",
+        "android_client_info": {
+          "package_name": "com.example.ankit.socio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764417511298-g1a8vfp8fma6p3as9q66ocmhn5fagfk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ankit.socio",
+            "certificate_hash": "5a066a23ffaa7e75297082696743c9002cea5be0"
+          }
+        },
+        {
+          "client_id": "764417511298-d6oj761kkakn6rcs9cllek1or9gu8rv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhOpzYJlttP2TnytbZJyrBU1XYjSW5OPc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764417511298-d6oj761kkakn6rcs9cllek1or9gu8rv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
