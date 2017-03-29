@@ -10,7 +10,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,8 +24,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends BaseActivity {
     private static final String TAG = "HomeActivity";
+
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -48,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        showProgressDialog();
         auth = FirebaseAuth.getInstance();
         if (!isUserLogin()) {
             signOut();
@@ -75,6 +76,7 @@ public class HomeActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        hideProgressDialog();
     }
 
     private boolean isUserLogin(){
@@ -95,10 +97,15 @@ public class HomeActivity extends AppCompatActivity {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 
+    private void showProfile() {
+        Intent profileIntent = new Intent(HomeActivity.this, ProfileActivity.class);
+        HomeActivity.this.startActivity(profileIntent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_home, menu);
         return true;
     }
 
@@ -115,6 +122,9 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             case R.id.action_logout:
                 signOut();
+                return true;
+            case R.id.action_profile:
+                showProfile();
                 return true;
         }
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/profile_edit_bio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:maxLines="8"
+        android:gravity="top|left"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1.0">
+        <Button
+            android:id="@+id/btn_bio_cancel"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:text="@string/bio_cancel"
+            android:textSize="12sp"/>
+        <Button
+            android:id="@+id/btn_bio_ok"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:text="@string/bio_ok"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</RelativeLayout>

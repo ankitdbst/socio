@@ -10,6 +10,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDSKK9K6SWFuFOwqQ2Hu3_-2LeDO2cxosU" />
         <!--<meta-data-->
             <!--android:name="com.facebook.sdk.ApplicationId"-->
             <!--android:value="@string/facebook_application_id" />-->
@@ -27,17 +30,27 @@
             <!--</intent-filter>-->
         <!--</activity>-->
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main">
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main">
+        </activity>
+        <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/profile_page"/>
+        <activity
+            android:name=".BioEditActivity"
+            android:label="@string/bio_edit_page"/>
     </application>
 
 </manifest>

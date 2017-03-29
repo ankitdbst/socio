@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Socio</string>
+    <string name="app_name">Nukkad</string>
     <string name="facebook_application_id">464503807214653</string>
     <string name="facebook_login_protocol_scheme">fb464503807214653</string>
     <string name="loading">Please Wait…</string>
@@ -14,5 +14,13 @@
     <string name="unknown_error">Unknown error occurred</string>
     <string name="unknown_sign_in_response">Unknown response</string>
     <string name="login">Facebook Login</string>
-    <string name="logging_in">Logging in...</string>
+    <string name="logging_in">Logging in…</string>
+    <string name="action_set_location">Change Locality</string>
+    <string name="action_profile">Profile</string>
+    <string name="profile_page">Profile</string>
+    <string name="facebook_provider_id">facebook.com</string>
+    <string name="profile_bio">My bio here...</string>
+    <string name="bio_cancel">Cancel</string>
+    <string name="bio_ok">Ok</string>
+    <string name="bio_edit_page">Edit Bio</string>
 </resources>
